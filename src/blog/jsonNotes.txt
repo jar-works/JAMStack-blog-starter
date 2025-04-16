@@ -1,0 +1,8 @@
+Notes about the "blog.json" file
+
+For its usage in this directory, it must have the same name as directory.
+
+The reason for it is to give each of the .md files default meta data.
+
+In this case we have the layout default of the "article.njk" layout and 
+each post will also have the tag of "post" automatically.
