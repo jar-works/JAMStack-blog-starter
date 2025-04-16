@@ -1,0 +1,24 @@
+---
+layout: "base.njk"
+---
+
+
+<article class="main-article">
+    <div class="container container--narrow flow">
+        <h1 class="article-title">{{ title }}</h1>
+        <figure class="main-article__figure">
+        <img src="{{ image }}" alt="{{ imageAlt }}">
+        <figcaption>
+            {{ imageAlt }}
+        </figcaption>
+        </figure>
+
+        {# 
+            The interesting thing about this content is that we're essentially
+            chaining this to the "base.njk". That base file also has the same 
+            {{ content | safe }} line which is used to pass in content. This will
+            feed that very same line with content.
+         #}
+        {{ content | safe }}
+    </div>
+</article>
